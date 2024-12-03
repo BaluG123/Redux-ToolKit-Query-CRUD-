@@ -5,7 +5,7 @@ import {FlatList} from 'react-native-gesture-handler';
 import {deleteUser, updateUser} from '../redux/slice/userSlice';
 
 const Users = ({navigation}) => {
-  const users = useSelector(state => state.users);
+  const users = useSelector(state => state.users.users);
   const dispatch = useDispatch();
   console.log(users);
   return (
